@@ -11,6 +11,10 @@ def index():
 def main():
     return(render_template("main.html"))
 
+@app.route("/",methods=["GET","POST"])
+def dbs():
+    return(render_template("dbs.html"))
+
 if __name__ == "__main__":
     app.run()
     
